@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(218, 28%, 13%);
+}
+
+h1,h2,h3,h4,h5,h6,p,a,button,input,.input__button p {
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.nav,
+.nav__link ul,
+.intro,
+.content__row1,
+.content__row2,
+.stay,
+.stay__content,
+.quote__box1__profile,
+.quote__box2__profile,
+.quote__box3__profile,
+.quote,
+.footer__about,
+.footer__about__location,
+.footer__about__number1,
+.footer__about__number2 {
+    display: flex;
+}
+
+.nav,
+.content,
+.stay,
+.quote {
+    padding: 3rem 5rem;
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link ul {
+    list-style: none;
+}
+
+.nav__link ul a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    transition: 300ms;
+}
+
+.nav__link ul a:hover {
+    color: hsl(176, 68%, 64%);
+}
+
+/* intro part */
+
+.intro,
+.content,
+.stay,
+.quote,
+.get {
+    margin-top: 10rem;
+}
+
+.intro {
+    flex-direction: column;
+}
+
+.intro__img,
+.intro__h1,
+.intro__p,
+.intro__button {
+    margin: 0 auto;
+}
+
+/* content part */
+
+.content__row1 {
+    text-align: center;
+}
+
+.content__row2 {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.content p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+/* stay part */
+
+.stay__content {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stay__content h1 {
+    font-size: 3rem;
+    width: 60%;
+}
+
+.stay__content p,
+.get h3,
+.get__input {
+    margin-top: 1rem;
+}
+
+/* quote part */
+
+.quote {
+    justify-content: space-between;
+    background-image: url(images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 10px;
+}
+
+.quote__box1,
+.quote__box2,
+.quote__box3 {
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 31%;
+    background-color: #fff;
+}
+
+.quote__txt {
+    color: #1b1b1b;
+}
+
+.quote__box1__profile,
+.quote__box2__profile,
+.quote__box3__profile {
+    margin-top: 1.5rem;
+}
+
+.quote img {
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 1.5rem;
+}
+
+/* get card part */
+
+.get {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 10px;
+    position: relative;
+    top: 150px;
+    background-color: hsl(219, 30%, 18%);
+}
+
+.get h1,h3 {
+    color: #fff;
+}
+
+.get__input input {
+    width: 75%;
+    height: 3rem;
+    border-radius: 25px;
+    color: #1b1b1b;
+    padding: 1rem;
+}
+
+.get__input button {
+    width: 20%;
+    height: 3rem;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color:hsl(176, 68%, 64%) ;
+}
+
+/* footer part */
+
+.footer {
+    padding: 8rem 5rem 5rem;
+    margin-top: 5rem;
+    background-color: hsl(217, 28%, 15%);
+}
+
+.footer__about {
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.footer__about__location {
+    width: 30%;
+}
+
+.footer__about__location img {
+    height: 25px;
+    margin-right: 1.5rem;
+}
+
+.intro__button p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.intro__button {
+    border-radius: 25px;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    background-color: hsl(176, 68%, 64%);
+    transition: 350ms ease;
+}
+
+.intro__button:hover {
+    background-color: hsl(198, 60%, 50%);
+}
+
+/* .footer__about__location p {
+    width: 50%;
+} */
+
+@media (max-width: 900px) {
+
+    .nav {
+        padding: 3rem 1.5rem;
+    }
+
+    .nav__logo img{
+        height: 25px;
+    }
+
+    .intro__img img,
+    .stay__img img{
+        width: 300px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .intro h1,p,button {
+        text-align: center;
+    }
+
+    .stay {
+        display: block;
+    }
+
+    .content__row1,
+    .content__row2 {
+        display: block;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    .stay__content h1{
+        width: 100%;
+    }
+
+    .stay__content p {
+        text-align: left;
+    }
+
+    .quote {
+        display: block;
+    }
+
+    .quote__box1,
+    .quote__box2,
+    .quote__box3 {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .get {
+        padding: 2.5rem;
+    }
+
+    .get__input input,
+    .get__input button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .footer__about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__about__location {
+        width: 100%;
+    }
+
+    .footer__about__location img {
+        margin: 0;
+    }
+}
